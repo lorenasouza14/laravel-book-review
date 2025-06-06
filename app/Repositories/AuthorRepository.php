@@ -2,6 +2,8 @@
 namespace App\Repositories;
 use App\Models\Author;
 
+
+//Faz a conexão com o banco
 class AuthorRepository
 {
     public function get()
@@ -37,7 +39,7 @@ class AuthorRepository
         return $author;
     }
 
-     // Recupera os detalhes de um autor específico pelo id
+     // Recupera os detalhes de um autor específico de um livro pelo id 
     public function findBook(int $id) {
         $author = $this->details($id);
         $books = $author->books;

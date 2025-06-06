@@ -16,10 +16,8 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->text('synopsis');
-            
             $table->unsignedBigInteger('author_id');
             $table->unsignedBigInteger('genre_id')->nullable();
-
             $table->timestamps();
 
             $table->foreign('genre_id')->references('id')->on('book_genres')->onDelete('set null');

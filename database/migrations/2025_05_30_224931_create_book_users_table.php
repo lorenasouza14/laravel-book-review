@@ -20,12 +20,6 @@ return new class extends Migration
             $table->timestamps();
         });
     }
-
-//     class Author extends Model
-// {
-//     protected $table = 'authors';
-//     protected $fillable = ['name','birthdate','biography',];
-// }
     /**
      * Reverse the migrations.
      */
